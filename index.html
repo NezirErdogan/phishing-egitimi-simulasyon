@@ -2,17 +2,69 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phishing Uyarısı</title>
   <style>
-    body { background: #ff4757; color: #fff; text-align: center; font-size: 2em; padding-top: 100px; }
-    .alert { background: #fff; color: #ff4757; padding: 40px; border-radius: 20px; display: inline-block; }
+    body { 
+      background: #ff4757; 
+      color: #fff; 
+      text-align: center; 
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    .alert { 
+      background: #fff; 
+      color: #ff4757; 
+      padding: 40px; 
+      border-radius: 20px; 
+      display: inline-block;
+      max-width: 800px;
+      margin: 20px auto;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .warning-icon {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .tips {
+      text-align: left;
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+    }
+    .tips h3 {
+      color: #ff4757;
+      margin-top: 0;
+    }
+    .tips ul {
+      padding-left: 20px;
+    }
+    .tips li {
+      margin: 10px 0;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <div class="alert">
-    <h1>⚠️ Dikkat!</h1>
+    <div class="warning-icon">⚠️</div>
+    <h1>Dikkat!</h1>
     <p>Bu bir PHISHING saldırısı simülasyonuydu!</p>
     <p>Gerçek hayatta bu tür e-postalara tıklamamalısınız.</p>
+    
+    <div class="tips">
+      <h3>Phishing Saldırılarından Korunmak İçin İpuçları:</h3>
+      <ul>
+        <li>Gönderen e-posta adresini her zaman kontrol edin</li>
+        <li>Aciliyet içeren mesajlara şüpheyle yaklaşın</li>
+        <li>Linklere tıklamadan önce üzerine gelip gerçek URL'i kontrol edin</li>
+        <li>Kişisel bilgilerinizi isteyen e-postalara güvenmeyin</li>
+        <li>Resmi kurumlar genellikle e-posta ile şifre sormaz</li>
+        <li>Şüpheli bir e-posta aldığınızda, kurumun resmi web sitesinden iletişime geçin</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
